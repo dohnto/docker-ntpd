@@ -9,4 +9,4 @@ LABEL RUN="docker run -d --cap-add='SYS_TIME' --name NAME IMAGE" \
       vendor="Seznam.cz, a.s"
 
 ENTRYPOINT ["/usr/sbin/ntpd"]
-CMD ["-n", "-b", "-g"]
+CMD ["-n", "-b", "-g", "-l", "stdout"]
